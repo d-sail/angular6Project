@@ -1,0 +1,21 @@
+ul {
+    margin: 0;
+    padding: 0;
+}
+.nav {
+    border: 1px solid;
+    background-color: black;
+    list-style-type: none;
+}
+
+.navLink {
+    text-decoration: none;
+    color: cornsilk;
+}
+
+.navli {
+    display: inline-block;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 100;
+}

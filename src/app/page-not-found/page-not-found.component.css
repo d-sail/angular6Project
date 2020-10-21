@@ -1,0 +1,11 @@
+.pageNotFound > h2 {
+    color: crimson;
+    text-align: center;
+    text-shadow: dimgrey;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}

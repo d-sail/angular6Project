@@ -1,0 +1,72 @@
+.createEmployee {
+    margin: 30px;
+    border: mediumblue solid 2px;
+    border-radius: 5px;
+}
+
+.heading > h3 {
+    background-color: lightskyblue;
+    padding: 0px 0px 10px 5px;
+    margin: 0px;
+    border-radius: 5px;
+}
+
+.formBody, .email, .phone, .saveBtn {
+    margin: 10px 0px 10px 20px;
+}
+
+input {
+    border-radius: 5px;
+}
+
+.formBody > label {
+    margin-right: 10px;
+}
+
+.email > label {
+    margin-right: 43px;
+}
+
+.phone {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.phone > label {
+    margin-right: 36px;
+}
+
+.addSkillBtn {
+    margin: 10px 0px 10px 10px;
+}
+
+.skills {
+    border: brown 1px solid;
+    border-radius: 5px;
+    background-color: coral;
+    padding: 5px 5px 5px 5px;
+    margin-left: 105px;
+    width: 600px;
+}
+
+.content {
+    margin-top: 10px;
+    border-top: brown 2px dotted;
+    padding-top: 10px;
+}
+
+.proficiency {
+    margin-top: 10px;
+}
+
+.poroficience {
+    margin: 10px 0px 10px 0px;
+}
+
+#sk1, #sk2 {
+    margin-right: 55;
+}
+.validation {
+    color: red;
+    margin-left:88px
+}

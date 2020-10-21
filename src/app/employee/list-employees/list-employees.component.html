@@ -1,0 +1,27 @@
+<div class="container">
+  <table border="1" cellpadding="10">
+    <thead>
+      <tr>
+        <th>Full Name</th>
+        <th>Email Id</th>
+        <th>Phone</th>
+        <!-- <th>Skill Name</th>
+        <th>Experiene</th>
+        <th>Proficiency</th> -->
+        <th>Edit</th>
+        <!-- <th>ID</th> -->
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let employee of employees">
+        <td>{{ employee.fullName }}</td>
+        <td>{{ employee.email }}</td>
+        <td>{{ employee.phone }}</td>
+        <!-- <td *ngFor="let skill of employee.skills">{{ skill.skillName }}</td>
+        <td *ngFor="let skill of employee.skills">{{ skill.experienceInYears }}</td>
+        <td *ngFor="let skill of employee.skills">{{ skill.proficiency }}</td> -->
+        <td><button (click)="onClickEdit(employee.id)">Edit</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,22 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "fullName": "Dwidish Sail",
+      "email": "dwidish.sail@gmail.com",
+      "phone": 9822444071,
+      "skills": [
+        {
+          "skillName": "angular",
+          "experienceInYears": 2,
+          "proficiency": "beginner"
+        },
+        {
+          "skillName": "JavaScript",
+          "experienceInYears": 2,
+          "proficiency": "beginner"
+        }
+      ]
+    }
+  ]
+}

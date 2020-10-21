@@ -1,0 +1,72 @@
+<form class="createEmployee" [formGroup]="employeeForm" (ngSubmit)="onSubmit()">
+  <div class="heading">
+    <h3>{{ formTitle }}</h3>
+  </div>
+  <div class="formBody">
+    <label for="fullName">Full Name:</label>
+    <input type="text" id="fullName" formControlName="fullName" size="45" (blur)="logValidationErrors()"><br>
+    <span class="validation" *ngIf="employeeForm.get('fullName').touched">{{ fullNameLength }}</span><br>
+    <span class="validation" *ngIf="formErrors.fullName">
+      {{formErrors.fullName}}
+    </span>
+  </div>
+  <div class="email">
+    <label for="email">Email:</label>
+    <input type="email" id="email" formControlName="email" size="45" (blur)="logValidationErrors()"><br>
+    <span class="validation" *ngIf="formErrors.email">
+      {{formErrors.email}}
+    </span>
+  </div>
+  <div class="phone">
+    <label for="phone">Phone:</label>
+    <input type="phone" id="phone" formControlName="phone" size="45" (blur)="logValidationErrors()"><br>
+    <span class="validation" *ngIf="formErrors.phone">
+      {{formErrors.phone}}
+    </span>
+  </div>
+  <div class="skills">
+    <div class="addSkillBtn">
+      <button type="button" [disabled]="employeeForm.get('skills').invalide" (click)="addSkillBtnClick()">Add skills</button>
+    </div>
+    <div formArrayName="skills" *ngFor="let skill of employeeForm.get('skills').controls; let i = index" class="content">
+      <!-- [ngClass]="{i > 0 ? : content}" -->
+      <div [formGroupName]="i">
+        <div *ngIf="employeeForm.get('skills').length > 1">
+          <button type="button" style="float: right;" (click)="removeSkillsBlock(i)" title="Delete Skills">Delete</button>
+        </div>
+        <div>
+          <label [attr.for]="'skill'+i">Skill:</label>
+          <input [id]="'sk1'+i" type="text" formControlName="skillName" placeholder="Name" size="25">
+          <input [id]="'sk2'+i" type="text" formControlName="experienceInYears" placeholder="Expreience in years"
+            size="25"><br>
+          <span class="validation" *ngIf="skill.get('skillName').errors?.requried && skill.get('skillName').touched">
+            Skill Name is required
+          </span>
+          <span class="validation"
+            *ngIf="skill.get('experienceInYears').errors?.requried && skill.get('experienceInYears').touched">
+            Experience is required
+          </span>
+        </div>
+        <div class="proficiency">
+          <label [attr.for]="'proficiency'+i">Proficiency:</label>
+          <input type="radio" value="beginner" [id]="'beginner'+i" formControlName="proficiency">
+          <label [attr.for]="'beginner'+i">Beginner</label>
+          <input type="radio" value="intermediate" [id]="'intermediate'+i" formControlName="proficiency">
+          <label [attr.for]="'intermediate'+i">Intermediate</label>
+          <input type="radio" value="advanced" [id]="'advanced'+i" formControlName="proficiency">
+          <label [attr.for]="'advanced'+i">Advanced</label>
+          <span class="validation"
+            *ngIf="skill.get('proficiency').errors?.requried && skill.get('proficiency').touched">
+            Proficiency is required
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="saveBtn">
+    <button id="save" type="submit" (click)="onSubmit()">Save</button>
+    <!-- <button id="loadData" type="button" (click)="onLoadData()">Load Data</button>
+    <button id="patchData" type="button" (click)="onLoadPatch()">Patch Data</button> -->
+  </div>
+
+</form>

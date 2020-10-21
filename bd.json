@@ -1,0 +1,145 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "fullName": "D Sail",
+      "email": "dwisail.72@gmail.com",
+      "phone": "9999999999",
+      "skills": [
+        {
+          "skillName": "Angular",
+          "experienceInYears": 2,
+          "proficiency": "beginner"
+        },
+        {
+          "skillName": "JavaScript",
+          "experienceInYears": "4",
+          "proficiency": "intermediate"
+        },
+        {
+          "skillName": "HTML/CSS",
+          "experienceInYears": "5",
+          "proficiency": "advanced"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "fullName": "Dwidish Sail",
+      "email": "dwisail.72@gmail.com",
+      "phone": "9822444071",
+      "skills": [
+        {
+          "skillName": "Angular",
+          "experienceInYears": "2",
+          "proficiency": "beginner"
+        },
+        {
+          "skillName": "C#",
+          "experienceInYears": "2",
+          "proficiency": "beginner"
+        },
+        {
+          "skillName": "JS",
+          "experienceInYears": "7",
+          "proficiency": "advanced"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "fullName": "Dwidish Sail",
+      "email": "dwisail.72@gmail.com",
+      "phone": "9822444071",
+      "skills": [
+        {
+          "skillName": "Angular",
+          "experienceInYears": "2",
+          "proficiency": "beginner"
+        },
+        {
+          "skillName": "C#",
+          "experienceInYears": "2",
+          "proficiency": "beginner"
+        },
+        {
+          "skillName": "JS",
+          "experienceInYears": "7",
+          "proficiency": "advanced"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "fullName": "Somnath Kale",
+      "email": "som@test.com",
+      "phone": "9999999999",
+      "skills": [
+        {
+          "skillName": "Angular",
+          "experienceInYears": "4",
+          "proficiency": "advanced"
+        },
+        {
+          "skillName": "JavaScritp",
+          "experienceInYears": "5",
+          "proficiency": "advanced"
+        },
+        {
+          "skillName": "HTML/CSS/Bootstrap",
+          "experienceInYears": "5",
+          "proficiency": "advanced"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "fullName": "Somnath Kale",
+      "email": "som@test.com",
+      "phone": "9999999999",
+      "skills": [
+        {
+          "skillName": "Angular",
+          "experienceInYears": "4",
+          "proficiency": "advanced"
+        },
+        {
+          "skillName": "JavaScritp",
+          "experienceInYears": "5",
+          "proficiency": "advanced"
+        },
+        {
+          "skillName": "HTML/CSS/Bootstrap",
+          "experienceInYears": "5",
+          "proficiency": "advanced"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "fullName": "Arnav Sail",
+      "email": "arnavsail@gmail.com",
+      "phone": "8922444071",
+      "skills": [
+        {
+          "skillName": "DownHill",
+          "experienceInYears": "2",
+          "proficiency": "intermediate"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "fullName": "Arnav Sail",
+      "email": "arnavsail@gmail.com",
+      "phone": "8922444071",
+      "skills": [
+        {
+          "skillName": "DownHill",
+          "experienceInYears": "2",
+          "proficiency": "intermediate"
+        }
+      ]
+    }
+  ]
+}
